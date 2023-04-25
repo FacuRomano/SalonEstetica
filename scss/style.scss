@@ -1,0 +1,146 @@
+@import "header";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.color{
+    color: white;
+}
+
+body{
+    background:-webkit-gradient(rgb(255, 232, 235), rgb(245, 174, 174));
+}
+.menu{
+    background-color: rgba(240, 240, 240, 0.452);
+    display: flex;
+    font-weight: bold;
+    color: white;
+    .titulo{
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+        img{
+            border-radius: 60px;
+        }
+        h2{
+            margin: 0 auto;
+            margin-left: 20px;
+            color: black;
+        }
+
+    }
+    .submenu{
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.nosotros{
+    margin: 20px auto;
+    padding: 15px;
+    width: 100%;
+    background-color: rgb(243, 197, 228);
+    .titulo__nos{
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+    }
+    .texto__nos{
+        padding: 10px;
+        margin: 20px auto;
+        width: 50%;
+        background-color: rgba(250, 241, 255, 0.733);
+        border-radius: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+
+.manos {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas del mismo tamaño */
+    grid-template-rows: 1fr; /* Crea una sola fila */
+  
+    .logo_manos {
+      margin: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centra el contenido vertical y horizontalmente */
+  
+      .img_manos {
+        max-width: 100%;
+        margin: 20px;
+        border-radius: 20px;
+      }
+    }
+  
+    .descripcion_manos {
+      padding: 20px;
+      margin: 20px 20px 20px 0px;
+      background-color: aquamarine;
+      border-radius: 20px;
+      align-self: center;
+      justify-self: center; /* Centra el contenido vertical y horizontalmente */
+      width: 100%;
+      max-height: 62.5vh;
+
+      .titulo_manos{
+        display: flex;
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+      }
+      .texto_manos{
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+  }
+
+  .facial {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    justify-content: space-between; /* Alinea los contenedores y les da separación */
+    align-items: center;
+  
+    .logo_facial {
+      margin: 20px;
+      padding: 20px;
+      flex: 1; /* Hace que el contenedor tenga el mismo tamaño que .descripcion_facial */
+  
+      .img_facial {
+        max-width: 100%;
+        margin: 20px;
+        border-radius: 20px;
+      }
+    }
+  
+    .descripcion_facial {
+      padding: 20px;
+      margin: 20px;
+      background-color: aquamarine;
+      border-radius: 20px;
+      max-width: 100%;
+      max-height: 62.5vh;
+      flex: 1; /* Hace que el contenedor tenga el mismo tamaño que .logo_facial */
+
+      .titulo_facial{
+        display: flex;
+        justify-content: center;
+        font-family: 'Playfair Display', serif;
+      }
+      .texto_facial{
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+  }
