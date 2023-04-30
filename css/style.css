@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 :root {
   --colortextos: #777777;
@@ -127,6 +128,9 @@
     grid-gap: 30px;
     padding: 35px 0px; } }
 
+=======
+@charset "UTF-8";
+>>>>>>> f15e23175b2fd19e2957e94bd56013b4c733aad5
 * {
   margin: 0;
   padding: 0;
@@ -136,10 +140,17 @@
   color: white; }
 
 body {
+<<<<<<< HEAD
   background-color: #fff6fa; }
 
 .menu {
   background-color: #f0f0f0;
+=======
+  background: -webkit-gradient(#ffe8eb, #f5aeae); }
+
+.menu {
+  background-color: rgba(240, 240, 240, 0.452);
+>>>>>>> f15e23175b2fd19e2957e94bd56013b4c733aad5
   display: flex;
   font-weight: bold;
   color: white; }
@@ -160,6 +171,7 @@ body {
     display: flex;
     justify-content: flex-end; }
 
+<<<<<<< HEAD
 .manos {
   width: 100%;
   display: flex;
@@ -169,18 +181,64 @@ body {
     margin: 20px;
     padding: 20px;
     flex: 1; }
+=======
+.nosotros {
+  margin: 20px auto;
+  padding: 15px;
+  width: 100%;
+  background-color: #f3c5e4; }
+  .nosotros .titulo__nos {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif; }
+  .nosotros .texto__nos {
+    padding: 10px;
+    margin: 20px auto;
+    width: 50%;
+    background-color: rgba(250, 241, 255, 0.733);
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif; }
+
+.manos {
+  width: 100%;
+  /* Ocupa todo el ancho disponible */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Crea dos columnas del mismo tamaño */
+  grid-template-rows: 1fr;
+  /* Crea una sola fila */ }
+  .manos .logo_manos {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centra el contenido vertical y horizontalmente */ }
+>>>>>>> f15e23175b2fd19e2957e94bd56013b4c733aad5
     .manos .logo_manos .img_manos {
       max-width: 100%;
       margin: 20px;
       border-radius: 20px; }
   .manos .descripcion_manos {
     padding: 20px;
+<<<<<<< HEAD
     margin: 20px;
     background-color: aquamarine;
     border-radius: 20px;
     max-width: 100%;
     max-height: 62.5vh;
     flex: 1; }
+=======
+    margin: 20px 20px 20px 0px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    align-self: center;
+    justify-self: center;
+    /* Centra el contenido vertical y horizontalmente */
+    width: 100%;
+    max-height: 62.5vh; }
+>>>>>>> f15e23175b2fd19e2957e94bd56013b4c733aad5
     .manos .descripcion_manos .titulo_manos {
       display: flex;
       justify-content: center;
@@ -192,13 +250,25 @@ body {
 
 .facial {
   width: 100%;
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
+=======
+  /* Ocupa todo el ancho disponible */
+  display: flex;
+  justify-content: space-between;
+  /* Alinea los contenedores y les da separación */
+>>>>>>> f15e23175b2fd19e2957e94bd56013b4c733aad5
   align-items: center; }
   .facial .logo_facial {
     margin: 20px;
     padding: 20px;
+<<<<<<< HEAD
     flex: 1; }
+=======
+    flex: 1;
+    /* Hace que el contenedor tenga el mismo tamaño que .descripcion_facial */ }
+>>>>>>> f15e23175b2fd19e2957e94bd56013b4c733aad5
     .facial .logo_facial .img_facial {
       max-width: 100%;
       margin: 20px;
@@ -210,7 +280,12 @@ body {
     border-radius: 20px;
     max-width: 100%;
     max-height: 62.5vh;
+<<<<<<< HEAD
     flex: 1; }
+=======
+    flex: 1;
+    /* Hace que el contenedor tenga el mismo tamaño que .logo_facial */ }
+>>>>>>> f15e23175b2fd19e2957e94bd56013b4c733aad5
     .facial .descripcion_facial .titulo_facial {
       display: flex;
       justify-content: center;
@@ -219,6 +294,7 @@ body {
       display: flex;
       justify-content: center;
       font-family: 'Montserrat', sans-serif; }
+<<<<<<< HEAD
 
 .corporal {
   width: 100%;
@@ -401,3 +477,5 @@ body {
         display: flex;
         justify-content: center;
         font-family: 'Montserrat', sans-serif; } }
+=======
+>>>>>>> f15e23175b2fd19e2957e94bd56013b4c733aad5
