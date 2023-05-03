@@ -8,8 +8,8 @@
 
 .contenedor {
   width: 90%;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 100%;
+  margin: 0 auto;
   overflow: hidden;
   padding: var(--paddingsecciones); }
 
@@ -18,7 +18,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px; }
+  height: 70px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.164);
+  width: 100vw; }
   .menu_navegacion .logo {
     height: 70px; }
     .menu_navegacion .logo img {
@@ -29,15 +32,19 @@
     display: inline-block; }
   .menu_navegacion a {
     text-decoration: none;
-    color: black;
-    padding-left: 15px; }
+    color: white;
+    padding-left: 15px;
+    font-weight: bold; }
+    .menu_navegacion a:hover {
+      text-decoration: underline solid; }
 
 .hero {
   height: 500px;
-  background-image: url("../assets/banner.png");
-  background-position: center;
+  background-image: url("../assets/template2.jpg");
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; }
   .hero .contenedor_textos {
     padding: 0;
     height: 100%;
@@ -48,23 +55,35 @@
     .hero .contenedor_textos .titulo__nos {
       display: flex;
       justify-content: center;
-      font-family: 'Playfair Display', serif; }
+      font-family: 'Playfair Display', serif;
+      color: white; }
     .hero .contenedor_textos .texto__nos {
       width: 100%;
       padding: 10px;
-      background-color: rgba(250, 241, 255, 0.733);
-      border-radius: 20px;
-      font-family: 'Montserrat', sans-serif; }
+      background-color: rgba(250, 241, 255, 0.452);
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold; }
     .hero .contenedor_textos .boton {
-      width: 150px;
       display: flex;
       margin: 0 auto;
-      padding: 15px 0;
+      padding: 1%;
       background: var(--colorbotones);
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 5px;
       justify-content: center; }
+      .hero .contenedor_textos .boton:hover {
+        color: white;
+        text-decoration: underline;
+        border-color: white;
+        border-style: double; }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+    background-size: cover;
+    background-position: center 20vw; } }
 
 * {
   margin: 0;
@@ -75,7 +94,7 @@
 /*:::::Pie de Pagina*/
 .pie-pagina {
   width: 100%;
-  background-color: #0a141d; }
+  background-color: #ffdded; }
   .pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
@@ -93,11 +112,11 @@
       .pie-pagina .grupo-1 .box figure img {
         width: 250px; }
     .pie-pagina .grupo-1 .box h2 {
-      color: #fff;
+      color: #000000;
       margin-bottom: 25px;
       font-size: 20px; }
     .pie-pagina .grupo-1 .box p {
-      color: #efefef;
+      color: #000000;
       margin-bottom: 10px; }
     .pie-pagina .grupo-1 .red-social a {
       display: inline-block;
@@ -105,7 +124,7 @@
       width: 45px;
       height: 45px;
       line-height: 45px;
-      color: #fff;
+      color: #000000;
       margin-right: 10px;
       background-color: #0d2033;
       text-align: center;
@@ -113,10 +132,10 @@
       .pie-pagina .grupo-1 .red-social a:hover {
         color: aqua; }
   .pie-pagina .grupo-2 {
-    background-color: #0a1a2a;
+    background-color: #fcb0d3;
     padding: 15px 10px;
     text-align: center;
-    color: #fff; }
+    color: #000000; }
     .pie-pagina .grupo-2 small {
       font-size: 15px; }
 
@@ -138,176 +157,64 @@
 body {
   background-color: #fff6fa; }
 
-.menu {
-  background-color: #f0f0f0;
-  display: flex;
-  font-weight: bold;
-  color: white; }
-  .menu .titulo {
-    margin: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start; }
-    .menu .titulo img {
-      border-radius: 60px; }
-    .menu .titulo h2 {
-      margin: 0 auto;
-      margin-left: 20px;
-      color: black; }
-  .menu .submenu {
-    margin: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-end; }
-
-.manos {
+.seccionTrat {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .manos .logo_manos {
+  .seccionTrat .logo_trat {
     margin: 20px;
     padding: 20px;
     flex: 1; }
-    .manos .logo_manos .img_manos {
+    .seccionTrat .logo_trat .img_trat {
       max-width: 100%;
       margin: 20px;
-      border-radius: 20px; }
-  .manos .descripcion_manos {
+      border-radius: 10px; }
+  .seccionTrat .descripcion {
     padding: 20px;
     margin: 20px;
-    background-color: aquamarine;
-    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.082);
+    border-radius: 10px;
     max-width: 100%;
     max-height: 62.5vh;
     flex: 1; }
-    .manos .descripcion_manos .titulo_manos {
+    .seccionTrat .descripcion .titulo {
       display: flex;
       justify-content: center;
       font-family: 'Playfair Display', serif; }
-    .manos .descripcion_manos .texto_manos {
-      display: flex;
-      justify-content: center;
-      font-family: 'Montserrat', sans-serif; }
-
-.facial {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .facial .logo_facial {
-    margin: 20px;
-    padding: 20px;
-    flex: 1; }
-    .facial .logo_facial .img_facial {
-      max-width: 100%;
-      margin: 20px;
-      border-radius: 20px; }
-  .facial .descripcion_facial {
-    padding: 20px;
-    margin: 20px;
-    background-color: aquamarine;
-    border-radius: 20px;
-    max-width: 100%;
-    max-height: 62.5vh;
-    flex: 1; }
-    .facial .descripcion_facial .titulo_facial {
-      display: flex;
-      justify-content: center;
-      font-family: 'Playfair Display', serif; }
-    .facial .descripcion_facial .texto_facial {
-      display: flex;
-      justify-content: center;
-      font-family: 'Montserrat', sans-serif; }
-
-.corporal {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .corporal .logo_corporal {
-    margin: 20px;
-    padding: 20px;
-    flex: 1; }
-    .corporal .logo_corporal .img_corporal {
-      max-width: 100%;
-      margin: 20px;
-      border-radius: 20px; }
-  .corporal .descripcion_corporal {
-    padding: 20px;
-    margin: 20px;
-    background-color: aquamarine;
-    border-radius: 20px;
-    max-width: 100%;
-    max-height: 62.5vh;
-    flex: 1; }
-    .corporal .descripcion_corporal .titulo_corporal {
-      display: flex;
-      justify-content: center;
-      font-family: 'Playfair Display', serif; }
-    .corporal .descripcion_corporal .texto_corporal {
-      display: flex;
-      justify-content: center;
-      font-family: 'Montserrat', sans-serif; }
-
-.capilar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .capilar .logo_capilar {
-    margin: 20px;
-    padding: 20px;
-    flex: 1; }
-    .capilar .logo_capilar .img_capilar {
-      max-width: 100%;
-      margin: 20px;
-      border-radius: 20px; }
-  .capilar .descripcion_capilar {
-    padding: 20px;
-    margin: 20px;
-    background-color: aquamarine;
-    border-radius: 20px;
-    max-width: 100%;
-    max-height: 62.5vh;
-    flex: 1; }
-    .capilar .descripcion_capilar .titulo_capilar {
-      display: flex;
-      justify-content: center;
-      font-family: 'Playfair Display', serif; }
-    .capilar .descripcion_capilar .texto_capilar {
+    .seccionTrat .descripcion .texto {
       display: flex;
       justify-content: center;
       font-family: 'Montserrat', sans-serif; }
 
 @media screen and (max-width: 800px) {
-  .manos {
+  .seccionTrat {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
-    .manos .logo_manos {
+    .seccionTrat .logo_trat {
       margin: 20px;
       padding: 20px;
       flex: 1; }
-      .manos .logo_manos .img_manos {
+      .seccionTrat .logo_trat .img_trat {
         max-width: 100%;
         margin: 20px auto;
-        border-radius: 20px; }
-    .manos .descripcion_manos {
+        border-radius: 10px; }
+    .seccionTrat .descripcion {
       padding: 20px;
       margin: 20px auto;
       background-color: aquamarine;
-      border-radius: 20px;
+      border-radius: 10px;
       max-width: 100%;
       max-height: 62.5vh;
       flex: 1; }
-      .manos .descripcion_manos .titulo_manos {
+      .seccionTrat .descripcion .titulo {
         display: flex;
         justify-content: center;
         font-family: 'Playfair Display', serif; }
-      .manos .descripcion_manos .texto_manos {
+      .seccionTrat .descripcion .texto {
         display: flex;
         justify-content: center;
         font-family: 'Montserrat', sans-serif; }
@@ -324,12 +231,12 @@ body {
       .facial .logo_facial .img_facial {
         max-width: 100%;
         margin: 20px auto;
-        border-radius: 20px; }
+        border-radius: 10px; }
     .facial .descripcion_facial {
       padding: 20px;
       margin: 20px auto;
       background-color: aquamarine;
-      border-radius: 20px;
+      border-radius: 10px;
       max-width: 100%;
       max-height: 62.5vh;
       flex: 1; }
@@ -354,12 +261,12 @@ body {
       .corporal .logo_corporal .img_corporal {
         max-width: 100%;
         margin: 20px auto;
-        border-radius: 20px; }
+        border-radius: 10px; }
     .corporal .descripcion_corporal {
       padding: 20px;
       margin: 20px auto;
       background-color: aquamarine;
-      border-radius: 20px;
+      border-radius: 10px;
       max-width: 100%;
       max-height: 62.5vh;
       flex: 1; }

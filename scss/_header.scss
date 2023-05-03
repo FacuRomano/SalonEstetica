@@ -8,8 +8,8 @@
 
 .contenedor{
     width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
     overflow: hidden;
     padding: var(--paddingsecciones);
 }
@@ -20,6 +20,9 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.164);
+    width: 100vw;
     .logo{
         height: 70px;
         img{
@@ -33,17 +36,23 @@
     }
     a{
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
         padding-left: 15px;
+        font-weight: bold;
+        &:hover{
+            text-decoration: underline solid;
+            
+        }
     }
 }
 
 .hero{
     height: 500px;
-    background-image: url("../assets/banner.png");
+    background-image: url("../assets/template2.jpg");
+    background-size:cover;
+    background-attachment:fixed;
     background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
     .contenedor_textos{
         padding: 0;
         height: 100%;
@@ -55,25 +64,39 @@
             display: flex;
             justify-content: center;
             font-family: 'Playfair Display', serif;
+            color: white;
         }
         .texto__nos{
             width: 100%;
             padding: 10px;
-            background-color: rgba(250, 241, 255, 0.733);
-            border-radius: 20px;
+            background-color: rgba(250, 241, 255, 0.452);
+            border-radius: 5px;
             font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
         }
         .boton{
-            width: 150px;
             display: flex;
             margin: 0 auto;
-            padding: 15px 0;
+            padding: 1%;
             background: var(--colorbotones);
             color: white;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 5px;
             justify-content: center;
+            &:hover{
+                color: white;
+                text-decoration: underline;
+                border-color: white;
+                border-style: double;
+            }
 
         }
     }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+    background-size:cover;
+    background-position: center 20vw
+  }}
