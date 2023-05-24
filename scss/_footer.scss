@@ -8,6 +8,7 @@
 /*:::::Pie de Pagina*/
 .pie-pagina{
     width: 100%;
+    margin: 5% 0 0 0;
     background-color: #ffdded;
     .grupo-1{
         width: 100%;
@@ -23,18 +24,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 5px;
             img{
-                width: 250px;
+                max-width: 150px;
+                border-radius: 5px;
             }
         }
         .box h2{
             color: #000000;
             margin-bottom: 25px;
             font-size: 20px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
         }
         .box p{
             color: #000000;
             margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
         }
         .red-social a{
             display: inline-block;
